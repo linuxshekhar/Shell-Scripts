@@ -7,7 +7,7 @@
 # ----------------------------------------------------------------------------
 
 
-for SERVER in 192.168.3.126 
+for SERVER in <Ip Address> 
 do
   ssh root@$SERVER 'echo "root:1234567" | chpasswd'
 done
