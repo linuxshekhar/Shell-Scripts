@@ -1,0 +1,14 @@
+# cat /etc/logrotate.d/messages
+
+/var/log/messages {
+    missingok
+    notifempty
+#    size=1G
+#    minsize=250M
+    maxsize=1G
+    daily
+    rotate 4
+    copytruncate
+    dateext
+    compress    
+}
