@@ -1,0 +1,9 @@
+# AWK Script to Replace Spaces with comma, Useful to create CSV
+
+awk '{
+  printf("%s,", $1)
+  printf("%s,", $2)
+  for (i=3; i<=NF; i++)
+    printf("%s ", $i)
+    printf("\n")
+}' myfile.txt
