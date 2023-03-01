@@ -1,0 +1,4 @@
+    vim -e - $file <<@@@
+g/banana/.-2,.d
+wq
+@@@
